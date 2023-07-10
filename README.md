@@ -23,7 +23,7 @@ This is forked component from https://github.com/VojtechLanka/vue-tags-input wit
 
 NPM
 ```
-npm i @vojtechlanka/vue-tags-input
+npm i @sonht2219/vue-tags-input
 ```
 
 ## Usage with draggable
@@ -32,6 +32,9 @@ Draggable is disabled by default. Set prop `:is-draggable` to true to enable it.
 
 On drop `tag-order-changed` is emitted with array of tags in new order. Use this array to update your tags to save the new order.
 
+- draggable-group: define group
+- draggable-animation: define animation
+
 ```html
 <template>
   <div>
@@ -39,6 +42,8 @@ On drop `tag-order-changed` is emitted with array of tags in new order. Use this
       v-model="tag"
       :tags="tags"
       :is-draggable="true"
+      :draggable-group="{name: 'tags', pull: clone, put: false}"
+      :draggable-animation="200"
       @tags-changed="newTags => tags = newTags"
       @tag-order-changed="newTags => tags = newTags"
     />
