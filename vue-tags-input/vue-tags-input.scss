@@ -175,3 +175,7 @@ div.vue-tags-input.disabled {
   background-color: $primary;
   color: #fff;
 }
+
+.flip-list-move {
+  transition: transform 0.5s;
+}

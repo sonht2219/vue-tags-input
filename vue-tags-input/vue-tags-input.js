@@ -21,6 +21,7 @@ export default {
       deletionMarkTime: null,
       selectedItem: null,
       focused: null,
+      // drag: false
     };
   },
   computed: {

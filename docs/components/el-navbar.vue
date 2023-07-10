@@ -89,6 +89,9 @@ export default {
         }, {
           label: 'Nuxt',
           route: '/examples/nuxt',
+        }, {
+          label: 'Draggale',
+          route: '/examples/draggable',
         }],
       }, {
         label: 'Full Docs',

@@ -361,4 +361,24 @@ export default {
     type: Boolean,
     default: false,
   },
+  /**
+   * @description Defines draggable group.
+   * @property {props}
+   * @type {String, Object}
+   * @default 'tags'
+   */
+  draggableGroup: {
+    type: [String, Object],
+    default: 'tags',
+  },
+  /**
+   * @description Defines draggable animation.
+   * @property {props}
+   * @type {Number}
+   * @default 200
+   */
+  draggableAnimation: {
+    type: Number,
+    default: 200,
+  },
 };

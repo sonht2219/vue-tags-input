@@ -4,6 +4,7 @@ import Validation from './validation/';
 import Hooks from './hooks/';
 import Templates from './templates/';
 import Nuxt from './nuxt';
+import Draggable from './draggable';
 
 export default [{
   path: '/examples/styling',
@@ -29,4 +30,8 @@ export default [{
   path: '/examples/nuxt',
   name: 'examples.nuxt',
   component: Nuxt,
+}, {
+  path: '/examples/draggable',
+  name: 'draggale.nuxt',
+  component: Draggable,
 }];

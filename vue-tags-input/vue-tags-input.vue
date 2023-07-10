@@ -12,19 +12,21 @@
       <component
         :is="isDraggable ? 'draggable' : 'ul'"
         v-if="tagsCopy"
-        v-model="tagsCopy" group="tags"
+        v-model="tagsCopy"
+        :group="draggableGroup"
         class="ti-tags"
         tag="ul"
         draggable=".item"
         :handle="draggableHandle ? '.handle' : ''"
         ghost-class="ghost-tag"
         drag-class="drag-tag"
+        :animation="draggableAnimation"
         @start="drag=true"
         @end="drag=false; tagOrderChanged()"
       >
         <li
           v-for="(tag, index) in tagsCopy"
-          :key="index"
+          :key="index + 0"
           :style="tag.style"
           :class="[
             { 'ti-editing': tagsEditStatus[index] },

@@ -2,6 +2,7 @@
 
 This is forked component from https://github.com/JohMun/vue-tags-input with added drag and drop support.
 
+This is forked component from https://github.com/VojtechLanka/vue-tags-input with added drag and drop options support.
 ## Features
 
 * No dependencies
